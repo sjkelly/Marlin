@@ -557,6 +557,12 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // Support for the BariCUDA Paste Extruder.
 //#define BARICUDA
 
+// Support for the inkshield/HPC6602
+//#define HPC6602
+#ifdef HPC6602
+    #define NUM_HPC6602 2 // Number of Inkjet heads
+#endif
+
 /*********************************************************************\
 * R/C SERVO support
 * Sponsored by TrinityLabs, Reworked by codexmas
