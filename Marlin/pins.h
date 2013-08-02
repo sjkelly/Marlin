@@ -1726,6 +1726,32 @@
 #define KILL_PIN           -1
 #define SUICIDE_PIN        -1  //PIN that has to be turned on right after start, to keep power flowing.
 
+#ifdef HPC6602
+    #define INK_PINA 17
+    #define INK_PINB 16
+    #define INK_PINC 15
+    #define INK_PIND 14
+    #if NUM_HPC6602 >= 1
+        #define INK_PULSE0 19
+    #endif
+    #if NUM_HPC6602 >= 2
+        #define INK_PULSE1 18
+    #endif
+    #if NUM_HPC6602 >= 3
+        #define INK_PULSE2 -1
+    #endif
+    #if NUM_HPC6602 >= 4
+        #define INK_PULSE3 -1
+    #endif
+    #if NUM_HPC6602 >= 5
+        #define INK_PULSE4 -1
+    #endif
+    #if NUM_HPC6602 >= 6
+        #define INK_PULSE5 -1
+    #endif
+#endif
+
+
 #endif
 
 /****************************************************************************************
