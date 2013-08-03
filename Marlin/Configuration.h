@@ -558,7 +558,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 //#define BARICUDA
 
 // Support for the inkshield/HPC6602
-//#define HPC6602
+#define HPC6602
 #ifdef HPC6602
     #define NUM_HPC6602 2 // Number of Inkjet heads
 #endif
