@@ -1801,6 +1801,11 @@
 #define E1_MS1_PIN 63
 #define E1_MS2_PIN 64
 
+#define E2_STEP_PIN         xx
+#define E2_DIR_PIN          xx
+#define E2_ENABLE_PIN       xx
+
+
 #define DIGIPOTSS_PIN 38
 #define DIGIPOT_CHANNELS {4,5,3,0,1} // X Y Z E0 E1 digipot channels to stepper driver mapping
 
