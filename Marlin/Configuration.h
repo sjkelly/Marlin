@@ -176,9 +176,9 @@
 //    #define  DEFAULT_Kd 114
 
 // Makergear
-    #define  DEFAULT_Kp 7.0
-    #define  DEFAULT_Ki 0.1
-    #define  DEFAULT_Kd 12
+    #define  DEFAULT_Kp 12.02
+    #define  DEFAULT_Ki 0.55
+    #define  DEFAULT_Kd 65.57
 
 // Mendel Parts V9 on 12V
 //    #define  DEFAULT_Kp 63.0
