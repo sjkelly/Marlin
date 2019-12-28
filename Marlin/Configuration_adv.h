@@ -386,7 +386,7 @@
 #define Y_HOME_BUMP_MM 0
 #define Z_HOME_BUMP_MM 0
 #define HOMING_BUMP_DIVISOR { 2, 2, 2 }  // Re-Bump Speed Divisor (Divides the Homing Feedrate)
-//#define QUICK_HOME                     // If homing includes X and Y, do a diagonal move initially
+#define QUICK_HOME                     // If homing includes X and Y, do a diagonal move initially
 
 // When G28 is called, this option will make Y home before X
 //#define HOME_Y_BEFORE_X
@@ -1161,13 +1161,13 @@
   #define HOLD_MULTIPLIER    0.5  // Scales down the holding current from run current
   #define INTERPOLATE       true  // Interpolate X/Y/Z_MICROSTEPS to 256
 
-  #define X_CURRENT          300  // rms current in mA. Multiply by 1.41 for peak current.
+  #define X_CURRENT          250  // rms current in mA. Multiply by 1.41 for peak current.
   #define X_MICROSTEPS        16  // 0..256
 
-  #define Y_CURRENT          300
+  #define Y_CURRENT          250
   #define Y_MICROSTEPS        16
 
-  #define Z_CURRENT          300
+  #define Z_CURRENT          250
   #define Z_MICROSTEPS        16
 
   #define X2_CURRENT         200
@@ -1179,7 +1179,7 @@
   #define Z2_CURRENT         200
   #define Z2_MICROSTEPS       16
 
-  #define E0_CURRENT         800
+  #define E0_CURRENT         700
   #define E0_MICROSTEPS       16
 
   #define E1_CURRENT         800
@@ -1266,7 +1266,7 @@
   #if ENABLED(SENSORLESS_HOMING)
     #define X_HOMING_SENSITIVITY  -60
     #define Y_HOMING_SENSITIVITY  -60
-    #define Z_HOMING_SENSITIVITY  -60
+    #define Z_HOMING_SENSITIVITY  -51
   #endif
 
   /**
