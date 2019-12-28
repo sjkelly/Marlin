@@ -67,7 +67,7 @@
     #define Z_STOP_PIN     11   // Y-MIN
     #define SERVO0_PIN     10   // Z-MIN
   #else
-    #define Z_STOP_PIN     10
+    #define Z_STOP_PIN     Z_DIAG_PIN
   #endif
 
 #endif

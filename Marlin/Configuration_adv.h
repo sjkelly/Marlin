@@ -1167,7 +1167,7 @@
   #define Y_CURRENT          200
   #define Y_MICROSTEPS        16
 
-  #define Z_CURRENT           50
+  #define Z_CURRENT          200
   #define Z_MICROSTEPS        16
 
   #define X2_CURRENT         200
@@ -1266,7 +1266,7 @@
   #if ENABLED(SENSORLESS_HOMING)
     #define X_HOMING_SENSITIVITY  -60
     #define Y_HOMING_SENSITIVITY  -60
-    #define Z_HOMING_SENSITIVITY  -63
+    #define Z_HOMING_SENSITIVITY  -60
   #endif
 
   /**
