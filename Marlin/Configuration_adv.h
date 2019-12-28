@@ -385,7 +385,7 @@
 #define X_HOME_BUMP_MM 0
 #define Y_HOME_BUMP_MM 0
 #define Z_HOME_BUMP_MM 0
-#define HOMING_BUMP_DIVISOR { 2, 2, 4 }  // Re-Bump Speed Divisor (Divides the Homing Feedrate)
+#define HOMING_BUMP_DIVISOR { 2, 2, 2 }  // Re-Bump Speed Divisor (Divides the Homing Feedrate)
 //#define QUICK_HOME                     // If homing includes X and Y, do a diagonal move initially
 
 // When G28 is called, this option will make Y home before X
@@ -1167,7 +1167,7 @@
   #define Y_CURRENT          200
   #define Y_MICROSTEPS        16
 
-  #define Z_CURRENT          200
+  #define Z_CURRENT           50
   #define Z_MICROSTEPS        16
 
   #define X2_CURRENT         200
@@ -1235,19 +1235,19 @@
    * STEALTHCHOP needs to be enabled.
    * M913 X/Y/Z/E to live tune the setting
    */
-  //#define HYBRID_THRESHOLD
+  #define HYBRID_THRESHOLD
 
-  #define X_HYBRID_THRESHOLD       0  // [mm/s]
-  #define X2_HYBRID_THRESHOLD      0
-  #define Y_HYBRID_THRESHOLD       0
-  #define Y2_HYBRID_THRESHOLD      0
-  #define Z_HYBRID_THRESHOLD       0
-  #define Z2_HYBRID_THRESHOLD      0
-  #define E0_HYBRID_THRESHOLD      0
-  #define E1_HYBRID_THRESHOLD      0
-  #define E2_HYBRID_THRESHOLD      0
-  #define E3_HYBRID_THRESHOLD      0
-  #define E4_HYBRID_THRESHOLD      0
+  #define X_HYBRID_THRESHOLD       100  // [mm/s]
+  #define X2_HYBRID_THRESHOLD      100
+  #define Y_HYBRID_THRESHOLD       100
+  #define Y2_HYBRID_THRESHOLD      100
+  #define Z_HYBRID_THRESHOLD       100
+  #define Z2_HYBRID_THRESHOLD      100
+  #define E0_HYBRID_THRESHOLD      100
+  #define E1_HYBRID_THRESHOLD      100
+  #define E2_HYBRID_THRESHOLD      100
+  #define E3_HYBRID_THRESHOLD      100
+  #define E4_HYBRID_THRESHOLD      100
 
   /**
    * Use stallGuard2 to sense an obstacle and trigger an endstop.
@@ -1266,7 +1266,7 @@
   #if ENABLED(SENSORLESS_HOMING)
     #define X_HOMING_SENSITIVITY  -60
     #define Y_HOMING_SENSITIVITY  -60
-    #define Z_HOMING_SENSITIVITY  -60
+    #define Z_HOMING_SENSITIVITY  -63
   #endif
 
   /**
