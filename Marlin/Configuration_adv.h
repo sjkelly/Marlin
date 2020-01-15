@@ -1158,7 +1158,7 @@
 #if HAS_TRINAMIC
 
   #define R_SENSE           0.22  // R_sense resistor for Einsy
-  #define HOLD_MULTIPLIER    0.5  // Scales down the holding current from run current
+  #define HOLD_MULTIPLIER   0.75  // Scales down the holding current from run current
   #define INTERPOLATE       true  // Interpolate X/Y/Z_MICROSTEPS to 256
 
   #define X_CURRENT          250  // rms current in mA. Multiply by 1.41 for peak current.
@@ -1273,7 +1273,7 @@
    * Enable M122 debugging command for TMC stepper drivers.
    * M122 S0/1 will enable continous reporting.
    */
-  #define TMC_DEBUG
+  //#define TMC_DEBUG
 
   /**
    * M915 Z Axis Calibration
